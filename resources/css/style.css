@@ -1,0 +1,196 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#main-banner {
+  background-image: url("../images/glasses-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+header {
+  background-color: cadetblue;
+  color: white;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+header img, footer img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+header+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-text {
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.banner-logo, nav {
+  display: flex;
+  align-items: center;
+}
+
+nav span {
+  margin-left: 2rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/** Perks **/
+
+#perks {
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem 3rem;
+}
+
+.portrait img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.landscape img {
+  width: 5rem;
+  height: auto;
+}
+
+/****/
+
+/** Information **/
+
+#information {
+  justify-content: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin: 3rem 0 1rem;
+  text-align: left;
+}
+
+.info {
+  margin: 3rem 5% 5rem;
+  width: 35%;
+}
+
+footer {
+  padding: 4rem;
+  background-color: azure;
+}
+
+@media only screen and (max-width: 1080px) {
+  #main-banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+  header.container, footer.container {
+    width: 100%;
+  }
+  .banner-text {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner-text {
+    background-color: white;
+    width: 100%;
+    margin-top: 9rem;
+    margin-right: 0rem;
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .banner-logo span {
+    display: none;
+  }
+  h1 {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+  div+nav {
+    display: none;
+  }
+  .hidden {
+    display: inline-block;
+  }
+  #perks {
+    margin: 3.77rem auto;
+  }
+  #perks.container, #information.container {
+    flex-direction: column;
+  }
+  .item {
+    font-size: 0.77rem;
+    margin: 1.54rem auto;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  .info {
+    margin: 0 auto 4rem;
+    width: 100%;
+    font-size: 0.77rem;
+  }
+  footer.container {
+    justify-content: center;
+  }
+  footer span {
+    display: none;
+  }
+}
